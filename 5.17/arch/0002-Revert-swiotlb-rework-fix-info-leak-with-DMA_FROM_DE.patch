@@ -1,7 +1,7 @@
 From 2b21a37675c11fa1f45097e257282e3e732c7f9d Mon Sep 17 00:00:00 2001
 From: Linus Torvalds <torvalds@linux-foundation.org>
 Date: Sat, 26 Mar 2022 10:42:04 -0700
-Subject: [PATCH 2/2] Revert "swiotlb: rework "fix info leak with
+Subject: [PATCH 2/6] Revert "swiotlb: rework "fix info leak with
  DMA_FROM_DEVICE""
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8

@@ -1,7 +1,7 @@
 From f5e3c6d700c4eba824dcda21c7ef64f6fbfe7166 Mon Sep 17 00:00:00 2001
 From: "Jason A. Donenfeld" <Jason@zx2c4.com>
 Date: Wed, 23 Mar 2022 23:09:30 -0600
-Subject: [PATCH 1/2] random: treat bootloader trust toggle the same way as cpu
+Subject: [PATCH 1/6] random: treat bootloader trust toggle the same way as cpu
  trust toggle
 
 If CONFIG_RANDOM_TRUST_CPU is set, the RNG initializes using RDRAND.
