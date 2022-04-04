@@ -1,7 +1,7 @@
-From 15aab38b94e24ab39c520deea090f4354adcc700 Mon Sep 17 00:00:00 2001
+From 16da831cb064c08728a4d472b78fdd18597d32e2 Mon Sep 17 00:00:00 2001
 From: Torge Matthies <openglfreak@googlemail.com>
 Date: Fri, 11 Mar 2022 02:52:30 +0100
-Subject: [PATCH 1/8] sched/alt: Transpose the sched_rq_watermark array.
+Subject: [PATCH 1/9] sched/alt: Transpose the sched_rq_watermark array.
 
 ---
  kernel/sched/alt_core.c | 124 +++++++++++++++++++++++++++++++++-------

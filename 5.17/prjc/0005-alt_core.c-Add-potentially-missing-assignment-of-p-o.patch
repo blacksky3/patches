@@ -1,7 +1,7 @@
-From 13e695689774c3a00e18d064e5c510331bdcb1db Mon Sep 17 00:00:00 2001
+From 36b466ebcae564cb9adf95c24357283f83b5485c Mon Sep 17 00:00:00 2001
 From: Tor Vic <torvic9@mailbox.org>
 Date: Wed, 9 Mar 2022 14:03:08 +0100
-Subject: [PATCH 5/8] alt_core.c: Add potentially missing assignment of
+Subject: [PATCH 5/9] alt_core.c: Add potentially missing assignment of
  p->on_cpu in sched_fork
 
 ---

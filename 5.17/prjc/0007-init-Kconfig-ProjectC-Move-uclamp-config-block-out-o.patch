@@ -1,7 +1,7 @@
-From bfef780701d56adc9fac4efaa0232560e0c78c90 Mon Sep 17 00:00:00 2001
+From 562c7765a20485ac77c4ea5821c95b44f7f090e5 Mon Sep 17 00:00:00 2001
 From: Tor Vic <torvic9@mailbox.org>
 Date: Thu, 24 Feb 2022 11:09:22 +0100
-Subject: [PATCH 7/8] init/Kconfig: [ProjectC]: Move uclamp config block out of
+Subject: [PATCH 7/9] init/Kconfig: [ProjectC]: Move uclamp config block out of
  SCHED_ALT menuconfig
 
 ---

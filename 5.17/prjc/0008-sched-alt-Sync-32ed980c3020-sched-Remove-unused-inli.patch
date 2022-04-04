@@ -1,7 +1,7 @@
-From 9999ea35399c55896bf92dc334f079b8c4913535 Mon Sep 17 00:00:00 2001
+From 084015ca8ee0020c8242f9a87a86e275c9273cf4 Mon Sep 17 00:00:00 2001
 From: Torge Matthies <openglfreak@googlemail.com>
 Date: Mon, 10 Jan 2022 00:16:19 +0100
-Subject: [PATCH 8/8] sched/alt: [Sync] 32ed980c3020 sched: Remove unused
+Subject: [PATCH 8/9] sched/alt: [Sync] 32ed980c3020 sched: Remove unused
  inline function __rq_clock_broken()
 
 ---

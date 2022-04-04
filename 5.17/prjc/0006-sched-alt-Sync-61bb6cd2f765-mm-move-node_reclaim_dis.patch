@@ -1,7 +1,7 @@
-From c8770fb2dcb80a8d4da3a16f92899311d8dcbf00 Mon Sep 17 00:00:00 2001
+From f06d6f56bdd06df4990409560b847b1178c04226 Mon Sep 17 00:00:00 2001
 From: Torge Matthies <openglfreak@googlemail.com>
 Date: Mon, 10 Jan 2022 02:26:08 +0100
-Subject: [PATCH 6/8] sched/alt: [Sync] 61bb6cd2f765 mm: move
+Subject: [PATCH 6/9] sched/alt: [Sync] 61bb6cd2f765 mm: move
  node_reclaim_distance to fix NUMA without SMP
 
 ---
