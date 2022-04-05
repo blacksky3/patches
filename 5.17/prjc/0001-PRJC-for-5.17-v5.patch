@@ -1,55 +1,3 @@
-From db72e9161d7a7d433d902ae67a9dfc7e2efd5abc Mon Sep 17 00:00:00 2001
-From: Piotr Gorski <lucjan.lucjanov@gmail.com>
-Date: Tue, 5 Apr 2022 08:56:29 +0200
-Subject: [PATCH] PRJC for 5.17
-
-Signed-off-by: Piotr Gorski <lucjan.lucjanov@gmail.com>
----
- .../admin-guide/kernel-parameters.txt         |    6 +
- Documentation/admin-guide/sysctl/kernel.rst   |   10 +
- Documentation/scheduler/sched-BMQ.txt         |  110 +
- fs/proc/base.c                                |    2 +-
- include/asm-generic/resource.h                |    2 +-
- include/linux/sched.h                         |   33 +-
- include/linux/sched/deadline.h                |   20 +
- include/linux/sched/prio.h                    |   26 +
- include/linux/sched/rt.h                      |    2 +
- include/linux/sched/topology.h                |    3 +-
- init/Kconfig                                  |   34 +
- init/init_task.c                              |   18 +
- kernel/Kconfig.preempt                        |    2 +-
- kernel/cgroup/cpuset.c                        |    4 +-
- kernel/delayacct.c                            |    2 +-
- kernel/exit.c                                 |    4 +-
- kernel/locking/rtmutex.c                      |   16 +-
- kernel/sched/Makefile                         |   19 +-
- kernel/sched/alt_core.c                       | 7704 +++++++++++++++++
- kernel/sched/alt_debug.c                      |   31 +
- kernel/sched/alt_sched.h                      |  667 ++
- kernel/sched/bmq.h                            |  111 +
- kernel/sched/cpufreq_schedutil.c              |   10 +
- kernel/sched/cputime.c                        |   10 +-
- kernel/sched/debug.c                          |   10 +
- kernel/sched/idle.c                           |    2 +
- kernel/sched/pds.h                            |  127 +
- kernel/sched/pelt.c                           |    4 +-
- kernel/sched/pelt.h                           |    8 +-
- kernel/sched/sched.h                          |    9 +
- kernel/sched/stats.c                          |    4 +
- kernel/sched/stats.h                          |    2 +
- kernel/sched/topology.c                       |   17 +
- kernel/sysctl.c                               |   34 +
- kernel/time/hrtimer.c                         |    2 +
- kernel/time/posix-cpu-timers.c                |   10 +-
- kernel/trace/trace_selftest.c                 |    5 +
- 37 files changed, 9053 insertions(+), 27 deletions(-)
- create mode 100644 Documentation/scheduler/sched-BMQ.txt
- create mode 100644 kernel/sched/alt_core.c
- create mode 100644 kernel/sched/alt_debug.c
- create mode 100644 kernel/sched/alt_sched.h
- create mode 100644 kernel/sched/bmq.h
- create mode 100644 kernel/sched/pds.h
-
 diff --git a/Documentation/admin-guide/kernel-parameters.txt b/Documentation/admin-guide/kernel-parameters.txt
 index 59f881f36..d1c7ff0a0 100644
 --- a/Documentation/admin-guide/kernel-parameters.txt
@@ -9123,7 +9071,7 @@ index 000000000..be3ee4a55
 --- /dev/null
 +++ b/kernel/sched/bmq.h
 @@ -0,0 +1,111 @@
-+#define ALT_SCHED_VERSION_MSG "sched/bmq: BMQ CPU Scheduler "ALT_SCHED_VERSION" by Alfred Chen.\n"
++#define ALT_SCHED_VERSION_MSG "sched/bmq: BMQ CPU Scheduler "ALT_SCHED_VERSION" by Alfred Chen (kept alive artificially by Piotr Górski <lucjan.lucjanov@gmail.com>).\n"
 +
 +/*
 + * BMQ only routines
@@ -9428,7 +9376,7 @@ index 000000000..0f1f0d708
 --- /dev/null
 +++ b/kernel/sched/pds.h
 @@ -0,0 +1,127 @@
-+#define ALT_SCHED_VERSION_MSG "sched/pds: PDS CPU Scheduler "ALT_SCHED_VERSION" by Alfred Chen.\n"
++#define ALT_SCHED_VERSION_MSG "sched/pds: PDS CPU Scheduler "ALT_SCHED_VERSION" by Alfred Chen (kept alive artificially by Piotr Górski <lucjan.lucjanov@gmail.com>).\n"
 +
 +static int sched_timeslice_shift = 22;
 +
