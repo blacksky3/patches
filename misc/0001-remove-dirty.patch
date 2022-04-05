@@ -1,0 +1,35 @@
+From 96af8036697320a9923cdf8140ff5974a7eb0a8c Mon Sep 17 00:00:00 2001
+From: blacksky3 <blacksky3@tuta.io>
+Date: Mon, 4 Apr 2022 22:38:14 -0400
+Subject: [PATCH] remove -dirty
+
+---
+ scripts/setlocalversion | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/scripts/setlocalversion b/scripts/setlocalversion
+index af4754a35..e9cfdeadf 100755
+--- a/scripts/setlocalversion
++++ b/scripts/setlocalversion
+@@ -77,12 +77,12 @@ scm_version()
+ 		# it fails. Note that git-diff-index does not refresh the
+ 		# index, so it may give misleading results. See
+ 		# git-update-index(1), git-diff-index(1), and git-status(1).
+-		if {
+-			git --no-optional-locks status -uno --porcelain 2>/dev/null ||
+-			git diff-index --name-only HEAD
+-		} | read dummy; then
+-			printf '%s' -dirty
+-		fi
++		#if {
++		#	git --no-optional-locks status -uno --porcelain 2>/dev/null ||
++		#	git diff-index --name-only HEAD
++		#} | read dummy; then
++		#	printf '%s' -dirty
++		#fi
+ 	fi
+ }
+ 
+-- 
+2.35.1
+
