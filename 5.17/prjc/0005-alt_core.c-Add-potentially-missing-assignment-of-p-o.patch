@@ -1,7 +1,7 @@
-From 36b466ebcae564cb9adf95c24357283f83b5485c Mon Sep 17 00:00:00 2001
+From 063933749fee56a81d564b706bdb0db2125adf70 Mon Sep 17 00:00:00 2001
 From: Tor Vic <torvic9@mailbox.org>
 Date: Wed, 9 Mar 2022 14:03:08 +0100
-Subject: [PATCH 5/9] alt_core.c: Add potentially missing assignment of
+Subject: [PATCH 5/6] alt_core.c: Add potentially missing assignment of
  p->on_cpu in sched_fork
 
 ---
@@ -9,7 +9,7 @@ Subject: [PATCH 5/9] alt_core.c: Add potentially missing assignment of
  1 file changed, 3 insertions(+)
 
 diff --git a/kernel/sched/alt_core.c b/kernel/sched/alt_core.c
-index 05e4df1f9..9c9dc1676 100644
+index f2f04248b..3b601eec2 100644
 --- a/kernel/sched/alt_core.c
 +++ b/kernel/sched/alt_core.c
 @@ -3066,6 +3066,9 @@ int sched_fork(unsigned long clone_flags, struct task_struct *p)
