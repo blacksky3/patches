@@ -1,8 +1,8 @@
 From a986aa6558fdbbf31fae30cff8fa2714fcfde49f Mon Sep 17 00:00:00 2001
 From: Pawan Gupta <pawan.kumar.gupta@linux.intel.com>
 Date: Mon, 4 Apr 2022 17:35:45 -0700
-Subject: [PATCH 7/9] x86/speculation: Restore speculation related MSRs during
- S3 resume
+Subject: [PATCH 07/11] x86/speculation: Restore speculation related MSRs
+ during S3 resume
 
 After resuming from suspend-to-RAM, the MSRs that control CPU's
 speculative execution behavior are not being restored on the boot CPU.
@@ -57,5 +57,5 @@ index 9f2b251e8..7cbb3d00d 100644
  	return 0;
  }
 -- 
-2.35.1
+2.35.3
 
