@@ -1,7 +1,7 @@
 From a6d3a4702f13c7820e709a3b3b093f1f98590bf9 Mon Sep 17 00:00:00 2001
 From: Frederic Weisbecker <frederic@kernel.org>
 Date: Tue, 8 Feb 2022 17:16:34 +0100
-Subject: [PATCH 05/11] tick/rcu: Stop allowing RCU_SOFTIRQ in idle
+Subject: [PATCH 05/12] tick/rcu: Stop allowing RCU_SOFTIRQ in idle
 
 RCU_SOFTIRQ used to be special in that it could be raised on purpose
 within the idle path to prevent from stopping the tick. Some code still
@@ -115,5 +115,5 @@ index 566ad5bd8..2d76c91b8 100644
  	if (tick_nohz_full_enabled()) {
  		/*
 -- 
-2.35.3
+2.36.0
 

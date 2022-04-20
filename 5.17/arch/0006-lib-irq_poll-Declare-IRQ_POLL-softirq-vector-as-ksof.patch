@@ -1,7 +1,7 @@
 From dd4e421a5bd05feadf0aac5c27bf707ec52ecef1 Mon Sep 17 00:00:00 2001
 From: Frederic Weisbecker <frederic@kernel.org>
 Date: Tue, 8 Feb 2022 17:16:35 +0100
-Subject: [PATCH 06/11] lib/irq_poll: Declare IRQ_POLL softirq vector as
+Subject: [PATCH 06/12] lib/irq_poll: Declare IRQ_POLL softirq vector as
  ksoftirqd-parking safe
 
 The following warning may appear while setting a CPU down:
@@ -51,5 +51,5 @@ index 9613326d2..f40754caa 100644
  /* map softirq index to softirq name. update 'softirq_to_name' in
   * kernel/softirq.c when adding a new softirq.
 -- 
-2.35.3
+2.36.0
 

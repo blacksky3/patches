@@ -1,7 +1,7 @@
 From 5da2c5f496f4dd9d836813d51ceca2a72a5d122b Mon Sep 17 00:00:00 2001
 From: Akihiko Odaki <akihiko.odaki@gmail.com>
 Date: Sun, 3 Apr 2022 15:23:22 +0900
-Subject: [PATCH 09/11] Revert "ACPI: processor: idle: Only flush cache on
+Subject: [PATCH 09/12] Revert "ACPI: processor: idle: Only flush cache on
  entering C3"
 
 Revert commit 87ebbb8c612b ("ACPI: processor: idle: Only flush cache
@@ -41,5 +41,5 @@ index f8e9fa82c..05b3985a1 100644
  	while (1) {
  
 -- 
-2.35.3
+2.36.0
 

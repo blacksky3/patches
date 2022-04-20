@@ -1,7 +1,7 @@
 From 657406c00215aedab9ac1f7a3c06f9b918bab325 Mon Sep 17 00:00:00 2001
 From: Frederic Weisbecker <frederic@kernel.org>
 Date: Tue, 8 Feb 2022 17:16:33 +0100
-Subject: [PATCH 04/11] tick/rcu: Remove obsolete rcu_needs_cpu() parameters
+Subject: [PATCH 04/12] tick/rcu: Remove obsolete rcu_needs_cpu() parameters
 
 With the removal of CONFIG_RCU_FAST_NO_HZ, the parameters in
 rcu_needs_cpu() are not necessary anymore. Simply remove them.
@@ -97,5 +97,5 @@ index c89f50a7e..566ad5bd8 100644
  
  	/*
 -- 
-2.35.3
+2.36.0
 

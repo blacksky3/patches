@@ -1,7 +1,7 @@
 From 41a9f40c0b15bf3c2d822f927d0f65f8a44b5769 Mon Sep 17 00:00:00 2001
 From: Shreeya Patel <shreeya.patel@collabora.com>
 Date: Mon, 21 Mar 2022 19:02:41 +0530
-Subject: [PATCH 10/11] gpio: Restrict usage of GPIO chip irq members before
+Subject: [PATCH 10/12] gpio: Restrict usage of GPIO chip irq members before
  initialization
 
 commit 5467801f1fcbdc46bc7298a84dbf3ca1ff2a7320 upstream.
@@ -96,5 +96,5 @@ index b0728c8ad..f8996b46f 100644
  	 * @init_hw: optional routine to initialize hardware before
  	 * an IRQ chip will be added. This is quite useful when
 -- 
-2.35.3
+2.36.0
 
