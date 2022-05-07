@@ -1,14 +1,14 @@
-From c0d62b0b187ba710a78b85b094660c5dd1bb4092 Mon Sep 17 00:00:00 2001
+From e04e6cf75d96ae61d52775e6721e17abae1abc8f Mon Sep 17 00:00:00 2001
 From: blacksky3 <blacksky3@tuta.io>
-Date: Sat, 7 May 2022 14:00:22 -0400
+Date: Sat, 7 May 2022 14:05:05 -0400
 Subject: [PATCH] remove git version
 
 ---
- scripts/setlocalversion | 36 ++++++++++++++++++------------------
- 1 file changed, 18 insertions(+), 18 deletions(-)
+ scripts/setlocalversion | 38 +++++++++++++++++++-------------------
+ 1 file changed, 19 insertions(+), 19 deletions(-)
 
 diff --git a/scripts/setlocalversion b/scripts/setlocalversion
-index af4754a35..5f97cb290 100755
+index af4754a35..9f5fbf345 100755
 --- a/scripts/setlocalversion
 +++ b/scripts/setlocalversion
 @@ -44,28 +44,28 @@ scm_version()
@@ -52,7 +52,7 @@ index af4754a35..5f97cb290 100755
  
  		# Check for uncommitted changes.
  		# This script must avoid any write attempt to the source tree,
-@@ -77,12 +77,12 @@ scm_version()
+@@ -77,13 +77,13 @@ scm_version()
  		# it fails. Note that git-diff-index does not refresh the
  		# index, so it may give misleading results. See
  		# git-update-index(1), git-diff-index(1), and git-status(1).
@@ -62,15 +62,17 @@ index af4754a35..5f97cb290 100755
 -		} | read dummy; then
 -			printf '%s' -dirty
 -		fi
+-	fi
 +		#if {
-+		#	git --no-optional-locks status -uno --porcelain 2>/dev/null ||
-+		#	git diff-index --name-only HEAD
++			#git --no-optional-locks status -uno --porcelain 2>/dev/null ||
++			#git diff-index --name-only HEAD
 +		#} | read dummy; then
-+		#	printf '%s' -dirty
++			#printf '%s' -dirty
 +		#fi
- 	fi
++	#fi
  }
  
+ collect_files()
 -- 
 2.36.0
 
