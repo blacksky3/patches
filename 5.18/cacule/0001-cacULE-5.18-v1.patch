@@ -292,7 +292,7 @@ index d58c0389e..0cfb3b8f0 100644
 +#ifdef CONFIG_CACULE_RDB
 +	printk(KERN_INFO "CacULE CPU scheduler (RDB) v5.18 by Hamad Al Marri (kept alive artificially by Piotr Górski <lucjan.lucjanov@gmail.com>).");
 +#else
-+	printk(KERN_INFO "CacULE CPU scheduler v5.16 by Hamad Al Marri (kept alive artificially by Piotr Górski <lucjan.lucjanov@gmail.com>).");
++	printk(KERN_INFO "CacULE CPU scheduler v5.18 by Hamad Al Marri (kept alive artificially by Piotr Górski <lucjan.lucjanov@gmail.com>).");
 +#endif
 +#endif
 +
