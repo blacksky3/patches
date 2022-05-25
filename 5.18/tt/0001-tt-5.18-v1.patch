@@ -3469,7 +3469,7 @@ index d58c0389eb23..d3a3f8821ef9 100644
  	wait_bit_init();
  
 +#ifdef CONFIG_TT_SCHED
-+	printk(KERN_INFO "TT CPU scheduler v5.18 by Hamad Al Marri (kept alive artificially by P. Jung <ptr1337@cachyos.org>).");
++	printk(KERN_INFO "TT CPU scheduler v5.18 by Hamad Al Marri (kept alive artificially by Peter Jung <admin@ptr1337.dev>).");
 +#endif
 +
  #ifdef CONFIG_FAIR_GROUP_SCHED
